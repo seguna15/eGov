@@ -1,0 +1,32 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- include header-->
+
+<main>
+    <section class="login">
+        <h2>Login</h2>
+        <% if(locals.logout){%>
+            <div class="alert alert-success text-center">
+                <%= logout %>
+            </div>
+            <% } %>
+        <form action="/login" method="POST" class="login-form">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="email" placeholder="Enter Email Address">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="password" placeholder="Enter Password ">
+            </div>
+            <span>Forgotten Password?</span>
+            <div class="input-group">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </section>
+</main>
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- include footer-->

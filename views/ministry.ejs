@@ -1,0 +1,79 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- include header-->
+
+<main>
+    <%- include('include/_sidebar') %>
+
+    <section class="main-content">
+        <div class="instruction">
+            <h1 class="section-title">Discover Data by</h1>
+            <p>Insert NIN and select the relevant ministry to generate Data</p>
+        </div>
+
+        <input type="text" name="nin" class="nin" placeholder="Enter NIN">
+        <div >
+            <pre class="result" style="font-size: 2rem"></pre>
+        </div>
+        <div class="container">
+            <div class="box minOfHealth" id="minOfHealth" >
+                <div class="circle">
+                    <i class="fa-solid fa-briefcase-medical"></i>
+                </div>
+                <h2>Ministry of Health</h2>
+            </div>
+            <div class="box minOfEducation" id="minOfEducation">
+                <div class="circle">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <h2>Ministry of Education</h2>
+            </div>
+            <div class="box minOfJustice" id="minOfJustice">
+                <div class="circle">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <h2>Ministry of Justice</h2>
+            </div>
+            <div class="box minOfPower" id="minOfPower">
+                <div class="circle">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                </div>
+                <h2>Ministry of Power</h2>
+            </div>
+            <div class="box minOfAgric" id="minOfAgric">
+                <div class="circle">
+                    <i class="fa-solid fa-tractor"></i>
+                </div>
+                <h2>Ministry of Agriculture</h2>
+            </div>
+            <div class="box minOfHousing" id="minOfHousing">
+                <div class="circle">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <h2>Ministry of Housing</h2>
+            </div>
+            <div class="box minOfInformation" id="minOfInformation">
+                <div class="circle">
+                    <i class="fa-regular fa-newspaper"></i>
+                </div>
+                <h2>Ministry of Information</h2>
+            </div>
+            <div class="box minOfInterior" id="minOfInterior">
+                <div class="circle">
+                    <i class="fa-solid fa-person-military-pointing"></i>
+                </div>
+                <h2>Ministry of Interior</h2>
+            </div>
+        </div>
+    </section>
+</main>
+<!--script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.js"
+    integrity="sha512-rozBdNtS7jw9BlC76YF1FQGjz17qQ0J/Vu9ZCFIW374sEy4EZRbRcUZa2RU/MZ90X2mnLU56F75VfdToGV0RiA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script-->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- include footer-->

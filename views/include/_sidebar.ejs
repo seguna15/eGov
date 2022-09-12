@@ -1,0 +1,24 @@
+<section class="sidebar">
+    <nav>
+        <ul class="sidebar-link-group">
+            <% for ( let i in menu ) { %>
+                <% if ( menu[i].url==url ) { %>
+                    <li class='sidebar-link-item'>
+                        <a class='sidebar-link active' href='<%= menu[i].url %>'>
+                            <%= menu[i].name %> <i class='<%= menu[i].icon %>'></i>
+                        </a>
+                    </li>
+                    <% } else { %>
+            
+                        <li class='sidebar-link-item'>
+                            <a class='sidebar-link ' href='<%= menu[i].url %>'>
+                                <%= menu[i].name %> <i class='<%= menu[i].icon %>'></i>
+                            </a>
+                        </li>
+                    <% } %>
+                <% } %>
+        </ul>
+
+      
+    </nav>
+</section>

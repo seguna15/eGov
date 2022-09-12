@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= locals.title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">National Data Center</h1>
+        <nav>
+            <ul class="link-group">
+                <li class="link-item">
+                    <a href="/" class="link">Home</a>
+                </li>
+                <li class="link-item">
+                    <a href="#" class="link">Event</a>
+                </li>
+                <li class="link-item">
+                    <a href="#" class="link">Resourses</a>
+                </li>
+                <li class="link-item">
+                    <a href="" class="link">Data</a>
+                </li>
+                <li class="link-item">
+                    <a href="#" class="link">Revenue</a>
+                </li>
+    
+            </ul>
+        </nav>
+        <% if (locals.user) { %>
+            <a href="/logout" class="btn btn-logout link">Logout</a>
+        <% } else { %>
+            <a href="/login" class="btn link">Login</a>
+        <% } %>
+        
+    </header>
